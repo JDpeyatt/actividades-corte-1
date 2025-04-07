@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo inspirado en Windows 7, con predominancia del verde */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #5cb85c, #4cae4c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #000;
+}
+
+/* Contenedor estilo ventana de Windows 7 */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Título estilo cabecera de ventana */
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #4cae4c;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Párrafos descriptivos */
+.container p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para campos de entrada, simulando controles de Windows 7 */
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+/* Botón con degradado y efecto hover */
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4cae4c;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #4cae4c, #5cb85c);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #5cb85c, #4cae4c);
+}
+
+/* Mensaje de resultado */
+#resultado {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4cae4c;
+}
